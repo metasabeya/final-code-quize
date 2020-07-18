@@ -1,0 +1,48 @@
+html, body {
+    background-color: pink;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+ h2, a, span {
+    color: purple;
+    font-weight: 200;
+}
+
+ h1 {
+     color: red;
+     
+ }
+  
+ 
+#score-list {
+    font-size: 1.3rem;
+    color: dimgrey;    
+}
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+li {
+    counter-increment: li;
+}
+
+li::before {
+    content: "." counter(li);
+    color: yellow;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1.5rem;
+    margin-right: 0.5rem;
+    text-align: right;
+    direction: rtl;
+}
+
+hr {
+    height: 2px;
+    background-color:brown;
+}
+
+#scoresTitle {
+    padding-left: 1rem;
+}
